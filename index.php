@@ -1,7 +1,7 @@
+<?php get_header(); ?>
 
-
-<?php if (have_post()): ?>
-	<?php while(have_post()) : the_post(); ?>
-		
+<?php if (have_posts()): ?>
+	<?php while(have_posts()) : the_post(); ?>
+		<h3><?php the_title(); ?></h3>
 	<?php endwhile ?>
 <?php endif ?>
