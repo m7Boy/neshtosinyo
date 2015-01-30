@@ -45,7 +45,7 @@ td { font-weight: normal; text-align: left; }
 blockquote:before,
 blockquote:after,
 q:before,
-q:after { content: ""; }
+q:after { content: ''; }
 
 blockquote,
 q { -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }

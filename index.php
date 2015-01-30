@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-<?php if (have_posts()): ?>
-	<?php while(have_posts()) : the_post(); ?>
-		<h3><?php the_title(); ?></h3>
-	<?php endwhile ?>
-<?php endif ?>
+	<?php if (is_single()): ?>
+		<?php //include sigle.php ?>
+	<?php elseif ?>
+		<?php //loop code // blog/ date / search and ect. ?>
+	<?php endif ?>
+
+<?php get_footer(); ?>
