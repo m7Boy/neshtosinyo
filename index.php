@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 	<?php if (is_single()): ?>
-		<?php //include sigle.php ?>
-	<?php elseif ?>
+		<?php get_template_part('single'); ?>
+	<?php else: ?>
 		<?php //loop code // blog/ date / search and ect. ?>
 	<?php endif ?>
 

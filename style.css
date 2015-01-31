@@ -1,19 +1,56 @@
 /*
-	Theme Name: miracleDevTheme
+	Theme name: miracleDevTheme
+	Description: Custom Theme
 */
 
+/* Common elements styling */
+
+.post .entry ul { margin-left: 25px; }
+.post .entry ol { margin-left: 25px; }
+.post .entry a img { border: 0 }
+
+p img { padding: 0;	max-width: 100%; }
+img.centered { display: block; margin-left: auto; margin-right: auto; }
+img.alignright { margin: 2px 0 2px 7px; display: inline; }
+img.alignleft { margin: 2px 7px 2px 0; display: inline; }
+.alignright { float: right; display: inline; }
+.alignleft { float: left; display: inline; }
+.aligncenter, div.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/* Calendar widget */
+#wp-calendar { empty-cells: show; margin: 10px auto 0; }
+#wp-calendar #next a { padding-right: 10px; text-align: right; }
+#wp-calendar #prev a { padding-left: 10px; text-align: left; }
+#wp-calendar a { display: block; }
+#wp-calendar caption { text-align: center; width: 100%; }
+#wp-calendar td { padding: 3px 0; text-align: center; }
+.wp-caption { border: 1px solid #ddd; text-align: center; padding-top: 4px; margin: 10px; }
+.wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0;}
+
+.searchform label { color: #fff; }
+
+/* Big images in rich text editor should not break page layout */
+.post .entry { overflow: hidden; } 
 
 
 /*	Reset Code	*/
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+html,
+body { height: 100%; }
 
-html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { overflow-y: scroll; 
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+}
+
+body { min-width: 100%; background: #fafafa; font-family: 'Helvetica Light', sans-serif; font-size: 16px; line-height: 1.2; color: #3b3b3b;
+		-webkit-font-smoothing:antialiased;
+}
+
 *,
 *:before,
 *:after { -webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit; }
-
-body { background: #fff; }
 
 article,
 aside,
@@ -56,3 +93,23 @@ a:hover,
 a:active { outline: 0; }
 
 a img { border: 0; }
+
+/* ==========================================================================
+	#Helpers
+========================================================================== */
+.alignleft { float: left; }
+.alignright { float: right; }
+
+.hidden { display: none; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after { display: table; content: ' '; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* ==========================================================================
+	#Containers
+========================================================================== */
+.shell { width: 1280px; margin: 0 auto; }
+
+/******* /Theme *NameTheme* WordPress CSS *******/
