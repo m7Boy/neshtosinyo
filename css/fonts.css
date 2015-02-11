@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'aquarelleregular';
+    src: url('aquarelle-webfont.eot');
+    src: url('aquarelle-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aquarelle-webfont.woff2') format('woff2'),
+         url('aquarelle-webfont.woff') format('woff'),
+         url('aquarelle-webfont.ttf') format('truetype'),
+         url('aquarelle-webfont.svg#aquarelleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

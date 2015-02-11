@@ -10,9 +10,14 @@ function md_load_scripts() {
 	wp_enqueue_script('jquery');
 
 	# @wp_enqueue_script attributes -- id, location, dependencies, in_footer = false
-	#wp_enqueue_script('theme-functions', $stylesheet_dir . '/js/functions.js', array('jquery'), true);
+	wp_enqueue_script('owl-carousel-functions', $stylesheet_dir . '/js/owl.carousel.min.js', array('jquery'), true);
+	wp_enqueue_script('theme-functions', $stylesheet_dir . '/js/functions.js', array('jquery'), true);
 	
 	# @wp_enqueue_style attributes -- id, location, dependencies, media = all
+	wp_enqueue_style('fonts-styles', $stylesheet_dir . '/css/fonts.css');
+	wp_enqueue_style('carousel-styles', $stylesheet_dir . '/css/owl-carousel.css');
+	wp_enqueue_style('owl-styles', $stylesheet_dir . '/css/owl-theme.css');
+	wp_enqueue_style('slider-transition-styles', $stylesheet_dir . '/css/owl-transitions.css');
 	wp_enqueue_style('theme-styles', $stylesheet_dir . '/style.css');
 }
 
@@ -48,13 +53,14 @@ if (!function_exists('md_setup_theme')) {
 		// add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
 
 		# Add Image Size
+		add_image_size('social_ico_image_size', 24, 24);
 
 		# Register Theme Menu Locations
 		
-		/*register_nav_menus(array(
-			'main-menu'=>__('Main Header Menu', 'crb'),
-			'footer-menu'=>__('Footer Menu', 'crb'),
-		));*/
+		register_nav_menus(array(
+			'main-menu'=>__('Main Menu', 'crb'),
+			//'footer-menu'=>__('Footer Menu', 'crb'),
+		));
 		
 		# Add Actions
 
